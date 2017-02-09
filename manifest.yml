@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: IoT-Allen
+  host: IoT-Allen
+  disk_quota: 1024M
+  services:
+  - IoT-Allen-cloudantNoSQLDB
+  - IoT-Allen-iotf-service
+  - availability-monitoring-auto
